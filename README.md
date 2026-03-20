@@ -2,7 +2,7 @@
 
 A **Power Apps Component Framework (PCF)** control that replaces the default SLA Timer on Dynamics 365 Case forms with a modern, visually appealing experience. It displays SLA KPI instances as cards with animated donut charts, real-time countdown timers, and color-coded status badges.
 
-![Modern SLA Timer](sla.png)
+![Modern SLA Timer](img/sla.png)
 
 ## What It Does
 
@@ -89,6 +89,10 @@ pac solution import --path ModernSlaTimer.zip
 6. Configure the properties:
    - **SLA KPI Instances**: bind to the subgrid dataset
 7. **Save and Publish** the form
+
+![PCF Control Configuration](img/pcf.png)
+
+![Property Values](img/values.png)
 
 ## SLA Status Visual Guide
 
