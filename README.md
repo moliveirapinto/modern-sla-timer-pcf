@@ -19,9 +19,8 @@ This control binds to the **SLA KPI Instances** subgrid on a Case form and rende
 | Property | Description | Default |
 |---|---|---|
 | **SLA KPI Instances** (dataset) | The subgrid data source bound to the `slakpiinstance` entity | Required |
-| **Enable Negative Timer** | Legacy property — has no practical effect (see note below) | No |
 
-> **Note:** Breached (Noncompliant) KPIs **always** display a negative countdown regardless of the Enable Negative Timer setting. The control transitions KPIs to Noncompliant status within 1 second of breach, at which point the negative countdown is unconditionally shown. The countdown updates every 1 second automatically — no refresh interval configuration is needed.
+The countdown updates every 1 second automatically — no refresh interval configuration is needed.
 
 ## Prerequisites
 
