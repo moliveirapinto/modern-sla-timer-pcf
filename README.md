@@ -10,16 +10,16 @@ This control binds to the **SLA KPI Instances** subgrid on a Case form and rende
 - **Real-time countdown** (updates every second) showing time remaining until SLA breach
 - **Status badges** with color coding: In Progress (teal), Nearing Breach (amber with pulse animation), Breached (red), Succeeded (green with animated checkmark), Paused (gray), Cancelled (gray)
 - **Automatic status transitions** — the control detects when warning or failure times are reached and updates the visual in real time
-- **Negative timer support** — optionally shows elapsed time past SLA breach
+- **Negative countdown after breach** — breached KPIs always display a negative countdown showing elapsed time past the SLA deadline
 
 ## Control Properties
 
 | Property | Description | Default |
 |---|---|---|
 | **SLA KPI Instances** (dataset) | The subgrid data source bound to the `slakpiinstance` entity | Required |
-| **Enable Negative Timer** | Show negative countdown after SLA breach | No |
+| **Enable Negative Timer** | Legacy property — has no practical effect (see note below) | No |
 
-> **Note:** The countdown updates every 1 second automatically. No refresh interval configuration is needed.
+> **Note:** Breached (Noncompliant) KPIs **always** display a negative countdown regardless of the Enable Negative Timer setting. The control transitions KPIs to Noncompliant status within 1 second of breach, at which point the negative countdown is unconditionally shown. The countdown updates every 1 second automatically — no refresh interval configuration is needed.
 
 ## Prerequisites
 
@@ -87,7 +87,6 @@ pac solution import --path ModernSlaTimer.zip
 5. Click **+ Component** → search for **Modern SLA Timer**
 6. Configure the properties:
    - **SLA KPI Instances**: bind to the subgrid dataset
-   - **Enable Negative Timer**: toggle to Yes if you want countdown past breach
 7. **Save and Publish** the form
 
 ## SLA Status Visual Guide
@@ -96,7 +95,7 @@ pac solution import --path ModernSlaTimer.zip
 |---|---|---|
 | In Progress | Dual-ring donut (animated) | Teal |
 | Nearing Breach | Dual-ring donut (pulsing) | Amber |
-| Breached / Noncompliant | X icon with glow | Red |
+| Breached / Noncompliant | X icon with glow, negative countdown | Red |
 | Succeeded | Checkmark icon (animated draw) | Green |
 | Paused | Pause icon | Gray |
 | Cancelled | Dash icon | Light Gray |
