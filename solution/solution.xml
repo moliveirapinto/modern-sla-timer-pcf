@@ -2,10 +2,10 @@
   <SolutionManifest>
     <UniqueName>PowerAppsToolsTemp_mcsla</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="PowerAppsToolsTemp_mcsla" languagecode="1033" />
+      <LocalizedName description="Modern SLA Timer" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0</Version>
+    <Version>1.0.1</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>PowerAppsToolsPublisher_mcsla</UniqueName>
