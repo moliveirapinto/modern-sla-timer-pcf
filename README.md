@@ -32,7 +32,7 @@ The countdown updates every 1 second automatically — no refresh interval confi
 
 ### Option 1: Import the Solution (Recommended)
 
-1. Download the solution zip from the [Releases](../../releases) page (or package the `solution/` folder as a zip)
+1. Download the latest solution zip from the [Releases](../../releases) page
 2. Go to your Dynamics 365 environment → **Settings** → **Solutions** (or use [make.powerapps.com](https://make.powerapps.com))
 3. Click **Import** and upload the solution zip
 4. Follow the import wizard and publish all customizations
