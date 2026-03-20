@@ -17,8 +17,9 @@ This control binds to the **SLA KPI Instances** subgrid on a Case form and rende
 | Property | Description | Default |
 |---|---|---|
 | **SLA KPI Instances** (dataset) | The subgrid data source bound to the `slakpiinstance` entity | Required |
-| **Update Frequency** | How often the timer refreshes (10s, 30s, 60s) | 30 seconds |
 | **Enable Negative Timer** | Show negative countdown after SLA breach | No |
+
+> **Note:** The countdown updates every 1 second automatically. No refresh interval configuration is needed.
 
 ## Prerequisites
 
@@ -86,7 +87,6 @@ pac solution import --path ModernSlaTimer.zip
 5. Click **+ Component** → search for **Modern SLA Timer**
 6. Configure the properties:
    - **SLA KPI Instances**: bind to the subgrid dataset
-   - **Update Frequency**: choose 10, 30, or 60 seconds
    - **Enable Negative Timer**: toggle to Yes if you want countdown past breach
 7. **Save and Publish** the form
 
