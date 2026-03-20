@@ -92,7 +92,7 @@ pac solution import --path ModernSlaTimer.zip
 
 ![PCF Control Configuration](img/pcf.png)
 
-![Property Values](img/values.png)
+<img src="img/values.png" alt="Property Values" width="40%">
 
 ## SLA Status Visual Guide
 
