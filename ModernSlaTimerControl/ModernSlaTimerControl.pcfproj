@@ -1,0 +1,19 @@
+<Project Sdk="Msbuild.Sdk.Extras/2.0.54">
+  <PropertyGroup>
+    <Name>ModernSlaTimerControl</Name>
+    <ProjectGuid>652ac3f3-6e1e-4bca-82eb-3c1dc44e6fad</ProjectGuid>
+    <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <RootNamespace>ModernSlaTimer</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerApps.MSBuild.Pcf" Version="1.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)out\**" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)node_modules\**" />
+  </ItemGroup>
+</Project>
